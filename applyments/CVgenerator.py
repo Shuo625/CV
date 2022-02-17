@@ -56,7 +56,7 @@ def generate_experiences(lang: str, experiences: list):
 
     for experience in experiences:
         for _experience in _experiences:
-            if _experience.startswith(experience):
+            if _experience.startswith(str(experience)):
                 experiences_contents.append(os.path.splitext(_experience)[0])
 
     experiences_contents = ['\input{%s/experiences/%s}\n' % (lang, content) for content in experiences_contents]
@@ -73,7 +73,7 @@ def generate_projects(lang: str, projects: list):
 
     for project in projects:
         for _project in _projects:
-            if _project.startswith(project):
+            if _project.startswith(str(project)):
                 projects_contents.append(os.path.splitext(_project)[0])
 
     projects_contents = ['\input{%s/projects/%s}\n' % (lang, content) for content in projects_contents]
