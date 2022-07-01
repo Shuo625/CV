@@ -1,5 +1,7 @@
-./vscode
+/.vscode
 
 applyments/*
 !applyments/CVgenerator.py
 !applyments/example
+
+CV/indent.log
