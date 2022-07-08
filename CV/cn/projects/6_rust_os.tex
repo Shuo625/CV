@@ -1,0 +1,10 @@
+\CVentry
+\CVhead
+{Rust OS}{May 2022 --}
+{A x86\_64 os implemented in Rust}{}
+\begin{CVitemize}
+  \CVitem{使用rust no\_std实现，使用3方库打包为bootable image}
+  \CVitem{支持几种中断包括kerboard, timer, breakpoint，处理double fault, page fault exception}
+  \CVitem{实现4-level 页表和heap内存的allocator}
+  \CVitem{支持vga text buffer输出，和键盘输入，并使用async处理输入}
+\end{CVitemize}

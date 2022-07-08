@@ -1,11 +1,10 @@
 \CVentry
-  \CVhead
-    {Rust OS}{May 2022 --}
-    {A x86\_64 os implemented in Rust}{}
-    \begin{CVitemize}
-      \CVitem{Implemented with the rust no\_std}
-      \CVitem{Handled several exceptions including hardware interrupts and double fault}
-      \CVitem{Implemented 4-level page table and heap memory allocator}
-      \CVitem{Supproted writing to vga text buffer and keyboard input}
-      \CVitem{Used async of Rust to handle keyboard input}
-    \end{CVitemize}
+\CVhead
+{Rust OS}{May 2022 --}
+{A x86\_64 os implemented in Rust}{}
+\begin{CVitemize}
+  \CVitem{Implemented with the rust no\_std and used a 3-party crate to build as a bootable image}
+  \CVitem{Handled several interruptions including hardware interrupts and double fault exception}
+  \CVitem{Implemented 4-level page table and heap memory allocator}
+  \CVitem{Supproted writing to vga text buffer and keyboard input and used async of rust to handle keyboard input}
+\end{CVitemize}
